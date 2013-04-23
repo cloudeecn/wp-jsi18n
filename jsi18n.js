@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
 		$(this).find("> .jsi18n-when").hide();
 		var found=false;
 		for(var i=0,max=jsi18n.length;i<max;i++){
-			$(this).find("> .jsi18n-when.jsi18n-"+jsi18n[i]).each(function(){
+			$(this).find("> .jsi18n-when.jsi18n-"+jsi18n[i].lang).each(function(){
 				$(this).show();
 				found=true;
 			});
