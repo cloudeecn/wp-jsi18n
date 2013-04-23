@@ -10,7 +10,7 @@ Author URI: https://cirnoworks.com
 
 function jsi18n_init()
 {
-	wp_enqueue_script('jsi18n', WP_CONTENT_URL.'/plugins/jsi18n/jsi18n.js', false, '0.0.1');
+	wp_enqueue_script('jsi18n', WP_CONTENT_URL.'/plugins/wp-jsi18n/jsi18n.js', false, '0.0.1');
 }
 function jsi18n_head(){?>
 <script type="text/javascript">
