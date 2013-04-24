@@ -1,9 +1,9 @@
 jQuery(document).ready(function($) {
 	$(".jsi18n-choose").each(function() {
-		$(this).find("> .jsi18n-when").hide();
+		$(this).find("> *").hide();
 		var found=false;
 		for(var i=0,max=jsi18n.length;i<max;i++){
-			$(this).find("> .jsi18n-when.jsi18n-"+jsi18n[i].lang).each(function(){
+			$(this).find("> .jsi18n-"+jsi18n[i].lang).each(function(){
 				$(this).show();
 				found=true;
 			});
@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 			}
 		}
 		if(!found){
-			$(this).find("> .jsi18n-when.jsi18n-default").show();
+			$(this).find("> .jsi18n-default").show();
 		}
 	});
 });
